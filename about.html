@@ -2,24 +2,34 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>我的网站</title>
+  <title>关于我们</title>
   <link rel="stylesheet" href="css\main.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <style>
-
+    .page-content {
+  padding: 20px;
+}
+body{
+  background: #28557e url(photo/o_bookBG1280.jpg) repeat-y left;
+}
   </style>
 </head>
 <body>
-  <h1 class="main-title">HDU GRAPEVINE</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">首页</a></li>
-      <li><a href="understu.html">本科生通知</a></li>
-      <li><a href="poststu.html">研究生通知</a></li>
-      <li><a href="text.html">心灵鸡汤</a></li>
-      <li><a href="about.html">关于我们</a></li>
-    </ul>
-  </nav>
-  <div><img src="photo\coming.png" alt=""></div>
+  <div class="header">
+    <h1 class="main-title">HDU GRAPEVINE</h1>
+    <div class="login-btn">
+      <a href="login.html">登录</a>
+    </div>
+  </div>
+<nav>
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li><a href="developer\index.html">开发者学院</a></li>
+    <li><a href="text\index.html">心灵鸡汤</a></li>
+    <li><a href="submit.html">文章投稿</a></li>
+    <li><a href="about.html">关于我们</a></li>
+  </ul>
+</nav>
   <div class="page-content">
     <h2>如果网站有什么不足之处,希望您在下方给出宝贵的建议</h2>
     <form action="/submit" method="POST">

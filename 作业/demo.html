@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>我的网站</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    /* 亮色主题 */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* 暗色主题 */
+body.dark-theme {
+  background-color: #333333;
+  color: #ffffff;
+}
+  </style>
+
+</head>
+<body>
+  <div class="header">
+    <h1 class="main-title">HDU GRAPEVINE</h1>
+    <div class="login-btn">
+      <a href="login.html">登录</a>
+    </div>
+  </div>
+<nav>
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li><a href="developer\index.html">开发者学院</a></li>
+    <li><a href="text\index.html">心灵鸡汤</a></li>
+    <li><a href="submit.html">文章投稿</a></li>
+    <li><a href="about.html">关于我们</a></li>
+  </ul>
+</nav>
+<button id="theme-toggle">切换主题</button>
+<script>
+  // 获取切换按钮和页面根元素
+var toggleButton = document.getElementById('theme-toggle');
+var rootElement = document.documentElement;
+
+// 监听切换按钮的点击事件
+toggleButton.addEventListener('click', function() {
+// 切换主题样式
+rootElement.classList.toggle('dark-theme');
+rootElement.classList.toggle('light-theme');
+});
+</script>
+</body>
+</html>

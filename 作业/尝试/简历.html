@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是杭州电子科技大学某学生的简历初步设计">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style></style>
+</head>
+<body>
+    <h1>个人简历<br></h1>
+    <h2>基本信息</h2>
+    <div class="tianyiming"><img src="C:\Users\刘超俊\Desktop\R-C (1).jpg" alt=""></div>
+    <ul>
+        <li>
+            <span class="header">姓名：刘超俊</span>
+            <!-- <input type="text" name="name" placeholder="请输入姓名"> -->
+        </li>
+        <li><span class="header">年龄：19</span></li>
+        <li><span class="header">性别：男</span></li>
+        <li><span class="header">就读学校：杭州电子科技大学</span></li>
+        <li><span class="header">兴趣爱好：无畏契约，乒乓球，羽毛球</span></li>
+    </ul>
+    <h2>个人介绍</h2>
+    <ul>
+        <p>本人基本掌握Vue框架，熟练使用nginx.....<button>点击了解更多</button>
+        我的主要做过的项目的代码示例如下：
+        <code>
+        var unlockContainer = document.getElementById('unlockContainer');
+        var slider = document.getElementById('slider');
+        var sliderText = document.getElementById('sliderText');
+        
+        var isDragging = false;
+        var startPosX = 0;
+        var currentPosX = 0;
+        var minDistance = 150;
+        
+        slider.addEventListener('mousedown', function(e) {
+          isDragging = true;
+          startPosX = e.clientX;
+        });
+        
+        document.addEventListener('mousemove', function(e) {
+          if (isDragging) {
+            var slideDistance = e.clientX - startPosX;
+            currentPosX = slideDistance;
+        
+            if (slideDistance >= 0 && slideDistance <= unlockContainer.offsetWidth - slider.offsetWidth) {
+              slider.style.left = slideDistance + 'px';
+            }
+          }
+        });
+        
+        document.addEventListener('mouseup', function() {
+          if (isDragging) {
+            isDragging = false;
+        
+            if (currentPosX >= minDistance) {
+              // 解锁成功
+              slider.style.backgroundColor = 'green';
+              sliderText.innerText = '解锁成功';
+              unlockContainer.style.borderColor = 'green';
+            } else {
+              // 解锁失败
+              slider.style.left = '-60px';
+              slider.style.backgroundColor = '#ccc';
+              sliderText.innerText = '滑动解锁';
+              unlockContainer.style.borderColor = '#ccc';
+            }
+          }
+        });</code>
+        </p>
+    </ul>
+</body>
+</html>

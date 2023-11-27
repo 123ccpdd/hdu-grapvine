@@ -1,0 +1,558 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <!-- saved from url=(0014)about:internet -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1200"/>
+    <title>2023-2024学年第一学期结业生返校重修学分缴费方式</title>
+    <meta name="description" content="杭州电子科技大学教务处">
+    <meta name="keywords" content="杭州电子科技大学教务处">
+    <meta name="description" content="2023-2024学年第一学期结业生返校重修学分缴费方式.doc附件：2023-2024学年第一学期结业生返校重修缴费学分汇总、选课信息.xlsx" />
+
+<link type="text/css" href="尝试\system.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/1/style/1/1.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/00/3d/61/style/64/64.css" rel="stylesheet"/>
+<link type="text/css" href="/_js/_portletPlugs/sudyNavi/css/sudyNav.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/artfuns/css/artfuns.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/sudyExtend/sudyExtend.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/datepicker/css/datepicker.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/simpleNews/css/simplenews.css" rel="stylesheet" />
+
+<script language="javascript" src="/_js/jquery.min.js" sudy-wp-context="" sudy-wp-siteId="61"></script>
+<script language="javascript" src="/_js/jquery.sudy.wp.visitcount.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/artfuns/js/jquery.wp.adjoin.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/sudyNavi/jquery.sudyNav.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/sudyExtend/sudyExtend.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/jquery.datepicker.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/datepicker_lang_HK.js"></script>
+<link rel="stylesheet" href="/_upload/tpl/01/22/290/template290/css/iconfont.css">
+    <link rel="stylesheet" href="/_upload/tpl/01/22/290/template290/css/hdjwc.css">
+    <script src="/_upload/tpl/01/22/290/template290/extends/extends.js" type="text/javascript"></script>
+    <script src="/_upload/tpl/01/22/290/template290/js/iconfont.js" type="text/javascript"></script>
+    <link href="/_upload/tpl/01/22/290/template290/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+</head>
+<body>
+<div class="topbf clearfix">
+    <div class="fl" frag="窗口01" portletmode="simpleSiteAttri">
+        
+            <a href="/main.htm" title="返回教务处首页" class="db"><img border='0' src='/_upload/site/00/3d/61/logo.png' /></a>
+                
+    </div>
+    <div class="fr searchbf">
+        <div class="weekly" frag="窗口200">
+            <div id="wp_news_w200"> 
+
+                
+                <li class="news n1 clearfix">
+                    <div class="start">2023-02-27 00:00:54</div>
+                    <div class="holiday">2023-07-02 14:09:10</div>
+                    <div class="Tomorrow">2023-08-28 00:00:32</div>
+                </li>
+            </div> 
+
+        </div>
+        <div class="clearfix">
+            <div class="fr timebf">
+                
+
+                    <script type="text/javascript">
+                        var strStart = $(".weekly .start").text(),
+                            strHoliday = $(".weekly .holiday").text(),
+                            strTomorrow = $(".weekly .Tomorrow").text();
+                        function TodayInfo(start,holiday,Tomorrow) {
+                            var WEEKLEN = 7, // 一周7天为常量
+                                WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"],
+                                weekInfo = {"week": null, "day": null, "Hyear": null}, // 初始化返回信息，默认第null周，星期null
+                                oneDay = 24 * 60 * 60 * 1000, // 一天的毫秒时长
+                                weekLeave,    // 开学当天所在周剩余天数
+                                weekStart,   // 开学当天start是星期几
+                                today,      // 今天
+                                //holiday, // 放假时间
+                                dateDiff, // 今天与开学当天日期差
+                                sDate; //开学之日，日期对象
+                            var rDateStr = /\d{4}[\/-]\d{1,2}[\/-]\d{1,2}/g; // 简单的日期格式校验：2013/12/19
+                            if (!rDateStr.test(start)) {
+                                alert("请使用合法的开学日期！！！");
+                                return weekInfo;
+                            }
+                            sDate  = new Date(start.replace("-", "/"));   // 转化开学时间
+                            sDate  = new Date(start.replace("-", "/"));   // 转化开学时间
+                            hDate  = new Date(holiday.replace("-", "/")); // 转化放假时间
+                            TDate  = new Date(Tomorrow.replace("-", "/")); // 转化下个开学时间
+                            sMonth = sDate.getMonth() +1;                 // 开学所处的月份 
+                            //console.log(sMonth);
+                            
+                            weekStart = sDate.getDay();                   // 计算开学是星期几
+                            weekStart = weekStart === 0 ? 7 : weekStart;  // JS中周日的索引为0，这里转换为7，方便计算
+                            weekLeave = WEEKLEN - weekStart;
+                            
+                            today = new Date();
+                            weekInfo.day = WEEKDAYS[today.getDay()];
+                            today = new Date(today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate());
+                            dateDiff = today - sDate ;
+                            dateDiffs = today - hDate;
+                            dateDiffss = today - TDate;
+                            //console.log(dateDiffss);
+                            
+                            dateDiff = parseInt(dateDiff / oneDay);       // 计算日期差天数
+                            dateDiffss = parseInt(dateDiffss / oneDay);       // 计算日期差天数
+                            //console.log(dateDiffss);
+                            if (dateDiff <0) {
+                              weekInfo.week = " ";
+                            }else{
+                            console.log(dateDiff);
+                            console.log(weekLeave);
+                             if(weekLeave> 5){
+                              weekInfo.week = Math.ceil((dateDiff - weekLeave + 8) / WEEKLEN);
+                              }else{
+                              weekInfo.week = Math.ceil((dateDiff - weekLeave + 2) / WEEKLEN)+1;
+                            }                            
+                            weekInfo.week = '<i class="icon icon-time "></i>今天是教学第 <span class="blue">'+weekInfo.week+'</span> 周';
+                            }
+                            if (dateDiffs >0 && dateDiff >0){    //  判断是否是假期            
+                                if(sMonth > 8){   //  判断上半年还是下半年
+                                    weekInfo.week = '<i class="icon icon-time "></i>寒假';
+                                }else{
+                                    weekInfo.week = '<i class="icon icon-time "></i>暑假';
+                                }
+                            }
+                            /*下个开学时间*/
+                            if(dateDiffss >0){
+                                //alert();
+                                weekInfo.week = Math.ceil((dateDiffss - weekLeave + 2) / WEEKLEN) + 1;
+                            }
+                            return weekInfo;
+                    }
+                    var td = TodayInfo(strStart,strHoliday,strTomorrow).week;
+                    document.write(td);
+                </script>
+
+            </div>
+            
+        </div>
+        <div class="search  clearfix" frag="窗口03" portletmode="search">
+            <form method="POST" action="/_web/_search/api/search/new.rst?locale=zh_CN&request_locale=zh_CN&_p=YXM9NjEmdD0yOTAmZD05NzcmcD0zJmY9MjM1OSZhPTAmbT1TTiZ8Ym5uQ29sdW1uVmlydHVhbE5hbWU9MjM1OSY_" target="_blank" onsubmit="if ($('#keyword').val() === '请输入关键字查询') { $('#keyword').val(''); }">
+    <div class="wp_search">
+        <table>
+            <tbody><tr>
+                <td height="25px">
+                    <input id="keyword" name="keyword" style="width: 225px" class="keyword" type="text" value="请输入关键字查询" onfocus="if (this.value === '请输入关键字查询') { this.value = ''; }" onblur="if (this.value === '') { this.value = '请输入关键字查询'; }">
+                </td>
+                <td>
+                    <input name="btnsearch" class="search" type="submit" value="搜索">
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</form>            
+        </div>
+    </div>
+</div>
+<div class="glo" frag="窗口1">
+    
+        
+        <ul class="wp-menu menu_nav clearfix">
+            <li class="nav_li menu-item i1"><h3><a class="menu-link" href="http://jwc.hdu.edu.cn/main.htm" target="_self"><span>首页</span></a></h3>
+                
+            </li>
+            
+            <li class="nav_li menu-item i2"><h3><a class="menu-link" href="/jgsz/list.htm" target="_self"><span>机构设置</span></a></h3>
+                
+            </li>
+            
+            <li class="nav_li menu-item i3"><h3><a class="menu-link" href="/tzgg/list.htm" target="_self"><span>通知公告</span></a></h3>
+                
+                <ul class="sub-menu nav_ul">
+                    
+                    <li class="sub-item i3-1"><a class="sub-link" href="/xjgl/list.htm" target="_self">学籍管理</a></li>
+                    
+                    <li class="sub-item i3-2"><a class="sub-link" href="/ksgl/list.htm" target="_self">考试管理</a></li>
+                    
+                    <li class="sub-item i3-3"><a class="sub-link" href="/pkxk/list.htm" target="_self">排课选课</a></li>
+                    
+                    <li class="sub-item i3-4"><a class="sub-link" href="/cjgl/list.htm" target="_self">成绩管理</a></li>
+                    
+                    <li class="sub-item i3-5"><a class="sub-link" href="/bygl/list.htm" target="_self">毕业管理</a></li>
+                    
+                    <li class="sub-item i3-6"><a class="sub-link" href="/sjjx/list.htm" target="_self">实践教学</a></li>
+                    
+                    <li class="sub-item i3-7"><a class="sub-link" href="/bysj/list.htm" target="_self">毕业设计</a></li>
+                    
+                    <li class="sub-item i3-8"><a class="sub-link" href="/sjjd/list.htm" target="_self">实践基地</a></li>
+                    
+                    <li class="sub-item i3-9"><a class="sub-link" href="/xkjs/list.htm" target="_self">学科竞赛</a></li>
+                    
+                    <li class="sub-item i3-10"><a class="sub-link" href="/zyjs/list.htm" target="_self">专业建设</a></li>
+                    
+                    <li class="sub-item i3-11"><a class="sub-link" href="/kcjs/list.htm" target="_self">课程建设</a></li>
+                    
+                    <li class="sub-item i3-12"><a class="sub-link" href="/jcjs/list.htm" target="_self">教材建设</a></li>
+                    
+                    <li class="sub-item i3-13"><a class="sub-link" href="/zhgl/list.htm" target="_self">综合管理</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="nav_li menu-item i4"><h3><a class="menu-link" href="/fwzn/list.htm" target="_self"><span>服务指南</span></a></h3>
+                
+                <ul class="sub-menu nav_ul">
+                    
+                    <li class="sub-item i4-1"><a class="sub-link" href="/xsfw/list.htm" target="_self">学生服务</a></li>
+                    
+                    <li class="sub-item i4-2"><a class="sub-link" href="/jsfw/list.htm" target="_self">教师服务</a></li>
+                    
+                    <li class="sub-item i4-3"><a class="sub-link" href="/ptfw/list.htm" target="_self">平台服务</a></li>
+                    
+                    <li class="sub-item i4-4"><a class="sub-link" href="/ggfw/list.htm" target="_self">公共服务</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="nav_li menu-item i5"><h3><a class="menu-link" href="/jxjs/list.htm" target="_self"><span>教学建设</span></a></h3>
+                
+                <ul class="sub-menu nav_ul">
+                    
+                    <li class="sub-item i5-1"><a class="sub-link" href="/zyszylb/list.htm" target="_self">专业设置一览表</a></li>
+                    
+                    <li class="sub-item i5-2"><a class="sub-link" href="/jxcgj/list.htm" target="_self">教学成果奖</a></li>
+                    
+                    <li class="sub-item i5-3"><a class="sub-link" href="/kcjs_4549/list.htm" target="_self">课程建设</a></li>
+                    
+                    <li class="sub-item i5-4"><a class="sub-link" href="/xkjs_4550/list.htm" target="_self">学科竞赛</a></li>
+                    
+                    <li class="sub-item i5-5"><a class="sub-link" href="/sjjd_4552/list.htm" target="_self">实践基地</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="nav_li menu-item i6"><h3><a class="menu-link" href="/xzzx/list.htm" target="_self"><span>下载中心</span></a></h3>
+                
+                <ul class="sub-menu nav_ul">
+                    
+                    <li class="sub-item i6-1"><a class="sub-link" href="/jwyx/list.htm" target="_self">教务运行</a></li>
+                    
+                    <li class="sub-item i6-2"><a class="sub-link" href="/sjjx_4555/list.htm" target="_self">实践教学</a></li>
+                    
+                    <li class="sub-item i6-3"><a class="sub-link" href="/jxjs_4556/list.htm" target="_self">教学建设</a></li>
+                    
+                    <li class="sub-item i6-4"><a class="sub-link" href="/qtxz/list.htm" target="_self">其它下载</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="nav_li menu-item i7"><h3><a class="menu-link" href="http://exchange.hdu.edu.cn/" target="_blank"><span>学生出国交流</span></a></h3>
+                
+            </li>
+            
+        </ul>
+        
+    
+    <script type="text/javascript">
+        $(".glo .wp-menu .nav_li.i1").addClass("sel");
+    </script>
+</div>
+<div class="wzbg">
+    <div class="main">
+        <div class="wz" frag="窗口101" portletmode="simpleColumnAttri">
+            
+                <i class="icon icon-address"></i> 当前位置：<a href="/main.htm" target="_self">首页</a><span class='possplit'>&nbsp;&nbsp;</span><a href="/tzgg/list.htm" target="_self">通知公告</a>
+            
+        </div>
+    </div>
+</div>
+
+<div class="main mainjl">
+    <div class="clearfix">
+        <div class="nylist">
+            <div class="news clearfix ny">
+                <div class="switch1 ">
+                    <div class="news-nr" frag="窗口102" portletmode="simpleArticleAttri">
+                        
+                            <h1>2023-2024学年第一学期结业生返校重修学分缴费方式</h1>
+                            <h2 class="arti_title"></h2>
+                            <div class="sub-p clearfix">
+                                <div>发布时间：2023-10-30&nbsp;&nbsp;&nbsp;阅读次数：<span class="WP_VisitCount" url="/_visitcountdisplay?siteId=61&type=3&articleId=252056">11</span>&nbsp;&nbsp;&nbsp;作者：杨彦平</div>
+                                <div class="bdsharebuttonbox bdshare-button-style0-16"  data-bd-bind="1574754262443">
+                                    <a class="bds_more" href="javascript:void(0)" data-cmd="more"></a>
+                                    <a title="分享到QQ空间" class="bds_qzone" href="javascript:void(0)" data-cmd="qzone"></a>
+                                    <a title="分享到新浪微博" class="bds_tsina" href="javascript:void(0)" data-cmd="tsina"></a>
+                                    <a title="分享到腾讯微博" class="bds_tqq" href="javascript:void(0)" data-cmd="tqq"></a>
+                                    <a title="分享到人人网" class="bds_renren" href="javascript:void(0)" data-cmd="renren"></a>
+                                    <a title="分享到微信" class="bds_weixin" href="javascript:void(0)" data-cmd="weixin"></a>
+                                </div>
+                            </div>
+                            <div class="info-txt">
+                                <div class='wp_articlecontent'><p><img src="/_ueditor/themes/default/images/icon_doc.gif" isupload="true" /><a href="/_upload/article/files/b0/04/da91eb644033a797489b97e068ac/845b2c50-824f-4ee1-b8b4-c7597e961b7f.doc" sudyfile-attr="{'title':'2023-2024学年第一学期结业生返校重修学分缴费方式.doc'}">2023-2024学年第一学期结业生返校重修学分缴费方式.doc</a></p><p><img src="/_ueditor/themes/default/images/icon_xls.gif" isupload="true" /><a href="/_upload/article/files/b0/04/da91eb644033a797489b97e068ac/3f6f0d37-54ce-4d08-94c9-198978374485.xlsx" sudyfile-attr="{'title':'附件：2023-2024学年第一学期结业生返校重修缴费学分汇总、选课信息.xlsx'}">附件：2023-2024学年第一学期结业生返校重修缴费学分汇总、选课信息.xlsx</a></p></div>
+                            </div>
+                            <div class="pre-next-page">
+                                <div class="wp_artfuns"><div class="wp_art_adjoin">
+<span class="prev">上一篇：</span><span class="prev-title"></span><span class="next">下一篇：</span><span class="next-title"></span></div></div>
+
+                            </div>
+                        <script> 
+     $(document).ready(function() { 
+         $('.wp_artfuns .wp_art_adjoin').adjoin({ 
+             url: '/_web/_column/publishedManage/api/beforeOrNextArticle/new.rst?_p=YXM9NjEmdD0yOTAmZD05NzcmcD0zJmY9NDUyNCZhPTI1MjA1NiZtPVNOJnxibm5Db2x1bW5WaXJ0dWFsTmFtZT10emdnJg__' 
+         }); 
+     }); 
+</script> 
+
+                    </div>
+                    <script type="text/javascript">
+                        $(".news-nr .prev-title").after("<br />");
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="foot clearfix">
+    <div class="main">
+        <div class="foot2 clearfix">
+            <div class="dbdh" frag="窗口91">
+                
+                    
+                    <ul class="clearfix" >
+                        
+                        <li class="links i1"><a href="http://www.hdu.edu.cn/" target="_blank">杭电首页</a> </li>
+                        <li class="lines">|</li>
+                        
+                        <li class="links i2"><a href="https://www.hdu.edu.cn/770/list.htm" target="_blank">上课时间</a> </li>
+                        <li class="lines">|</li>
+                        
+                        <li class="links i3"><a href="/xlyjcap/list.htm" target="_blank">校历与进程安排</a> </li>
+                        <li class="lines">|</li>
+                        
+                        <li class="links i4"><a href="/gxyjkbdh/list.htm" target="_blank">各学院教科办电话</a> </li>
+                        <li class="lines">|</li>
+                        
+                        <li class="links i5"><a href="/jxlzbdh/list.htm" target="_blank">教学楼值班电话</a> </li>
+                        <li class="lines">|</li>
+                        
+                    </ul>
+                    
+                
+                <script type="text/javascript">
+                    $(".dbdh .lines").last().remove();
+                </script>
+            </div>
+            <div class="foot3">
+                <div class="link">
+                    <div class="contentWidth">
+                        <ul >
+                            <li frag="窗口92">
+                                <div class="sudy-links" id="sudy-links-w92"> 
+     <span class="links-name">学院网站</span> 
+     <div class="links-wrap"> 
+<div id="wp_news_w92"> 
+
+                                    <ul class="">
+                                        
+                                        <li class="news-list n1">
+                                            <a href='http://mechanical.hdu.edu.cn/' target='_blank' title='机械工程学院'>机械工程学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n2">
+                                            <a href='http://elec.hdu.edu.cn/' target='_blank' title='电子信息学院'>电子信息学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n3">
+                                            <a href='http://comm.hdu.edu.cn/' target='_blank' title='通信工程学院'>通信工程学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n4">
+                                            <a href='http://auto.hdu.edu.cn/' target='_blank' title='自动化学院'>自动化学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n5">
+                                            <a href='http://computer.hdu.edu.cn/' target='_blank' title='计算机学院'>计算机学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n6">
+                                            <a href='http://cmee.hdu.edu.cn/' target='_blank' title='材料与环境工程学院'>材料与环境工程学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n7">
+                                            <a href='http://sci.hdu.edu.cn/' target='_blank' title='理学院'>理学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n8">
+                                            <a href='http://economics.hdu.edu.cn/' target='_blank' title='经济学院'>经济学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n9">
+                                            <a href='http://management.hdu.edu.cn/' target='_blank' title='管理学院'>管理学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n10">
+                                            <a href='http://accounting.hdu.edu.cn/' target='_blank' title='会计学院'>会计学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n11">
+                                            <a href='http://foreignedu.hdu.edu.cn/' target='_blank' title='外国语学院'>外国语学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n12">
+                                            <a href='http://syxy.hdu.edu.cn/' target='_blank' title='人文艺术与数字媒体学院'>人文艺术与数字媒体学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n13">
+                                            <a href='http://rwxy.hdu.edu.cn/' target='_blank' title='法学院'>法学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n14">
+                                            <a href='http://marxnew.hdu.edu.cn/' target='_blank' title='马克思主义学院'>马克思主义学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n15">
+                                            <a href='http://ped.hdu.edu.cn/' target='_blank' title='体育教学部'>体育教学部</a>
+                                        </li>
+                                        
+                                        <li class="news-list n16">
+                                            <a href='http://zhuoyue.hdu.edu.cn/' target='_blank' title='卓越学院'>卓越学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n17">
+                                            <a href='http://sie.hdu.edu.cn/' target='_blank' title='国际教育学院'>国际教育学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n18">
+                                            <a href='http://cbs.hdu.edu.cn/' target='_blank' title='网络空间安全学院'>网络空间安全学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n19">
+                                            <a href='http://adultedu.hdu.edu.cn/' target='_blank' title='继续教育学院'>继续教育学院</a>
+                                        </li>
+                                        
+                                        <li class="news-list n20">
+                                            <a href='http://joint.hdu.edu.cn/' target='_blank' title='杭电圣光机联合学院'>杭电圣光机联合学院</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div> 
+
+     </div> 
+</div> 
+<script type="text/javascript"> 
+     $(function() { 
+         $("#sudy-links-w92").sudyLinks({ 
+             handle: ".links-name", 
+             wrap: ".links-wrap", 
+             trigger: "mouseenter", 
+             effect: "show", 
+             speed: 300, 
+             hidePause: 800 
+         }); 
+     });  
+</script> 
+
+                            </li>
+                            <li frag="窗口93">
+                                <div class="sudy-links" id="sudy-links-w93"> 
+     <span class="links-name">教育网站</span> 
+     <div class="links-wrap"> 
+<div id="wp_news_w93"> 
+
+                                    <ul class="">
+                                        
+                                        <li class="news-list n1">
+                                            <a href='http://www.moe.gov.cn/' target='_blank' title='中华人民共和国教育部'>中华人民共和国教育部</a>
+                                        </li>
+                                        
+                                        <li class="news-list n2">
+                                            <a href='https://www.chsi.com.cn/' target='_blank' title='中国高等教育学生信息网'>中国高等教育学生信息网</a>
+                                        </li>
+                                        
+                                        <li class="news-list n3">
+                                            <a href='http://www.edu.cn/' target='_blank' title='中国教育和科研计算机网'>中国教育和科研计算机网</a>
+                                        </li>
+                                        
+                                        <li class="news-list n4">
+                                            <a href='http://www.jyb.cn/' target='_blank' title='中国教育新闻网'>中国教育新闻网</a>
+                                        </li>
+                                        
+                                        <li class="news-list n5">
+                                            <a href='http://www.neea.edu.cn' target='_blank' title='中国教育考试网'>中国教育考试网</a>
+                                        </li>
+                                        
+                                        <li class="news-list n6">
+                                            <a href='http://jyt.zj.gov.cn/' target='_blank' title='浙江省教育厅'>浙江省教育厅</a>
+                                        </li>
+                                        
+                                        <li class="news-list n7">
+                                            <a href='http://www.zjedu.org/' target='_blank' title='浙江省教育技术中心'>浙江省教育技术中心</a>
+                                        </li>
+                                        
+                                        <li class="news-list n8">
+                                            <a href='http://www.zjzs.net' target='_blank' title='浙江省教育考试院'>浙江省教育考试院</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div> 
+
+     </div> 
+</div> 
+<script type="text/javascript"> 
+     $(function() { 
+         $("#sudy-links-w93").sudyLinks({ 
+             handle: ".links-name", 
+             wrap: ".links-wrap", 
+             trigger: "mouseenter", 
+             effect: "show", 
+             speed: 300, 
+             hidePause: 800 
+         }); 
+     });  
+</script> 
+
+                            </li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="schoolinfo" frag="窗口100" portletmode="simpleSiteAttri">
+            
+                地址：杭州市杭州经济开发区白杨街道2号大街1158号&nbsp;&nbsp;邮编：310018<br>
+                邮箱：<a href="mailto:{站点邮箱}">hdujwc@hdu.edu.cn</a>&nbsp;&nbsp;电话：0571-86915011<br>
+                Copyright ©2016 杭州电子科技大学教务处All Rights Reserved 
+            
+        </div>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('[data_c=piclist]').find('li').mouseover(function () {
+            var piclist = $(this).parents('.switch').find('[data_c=piclist]');
+            var divbg = $(this).parents('.switch').find('[data_c=piclist1]');
+            piclist.find('li').removeClass('sel');
+            $(this).addClass('sel');
+            var index = piclist.find('li').index($(this));
+            divbg.hide();
+            divbg.eq(index).show();
+        });
+        $('[data_c=piclist2]').find('li').mouseover(function () {
+            var piclist2 = $(this).parents('.switch1').find('[data_c=piclist2]');
+            var divbg2 = $(this).parents('.switch1').find('[data_c=piclist3]');
+            piclist2.find('li').removeClass('sel');
+            $(this).addClass('sel');
+            var index = piclist2.find('li').index($(this));
+            divbg2.hide();
+            divbg2.eq(index).show();
+        });
+    });
+</script>
+<script type="text/javascript" src="/_upload/tpl/01/22/290/template290/js/comcus.js"></script>
+</body>
+</html>
+ <img src="/_visitcount?siteId=61&type=3&articleId=252056" style="display:none" width="0" height="0"/>

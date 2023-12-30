@@ -3,7 +3,7 @@
 <head>
   <title>表单页</title>
   <link rel="stylesheet" href="css\main.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font/iconfont.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,6 +16,7 @@
     }
     form {
       background-color: #fff;
+      margin: 20px;
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -66,22 +67,20 @@
 </head>
 <body>
   <div class="header">
-    <h1 class="main-title">HDU GRAPEVINE</h1>
-    <div class="login-btn">
-      <a href="login.html">登录</a>
-    </div>
+    <h1 class="main-title">MY GRAPEVINE</h1>
   </div>
   <nav>
     <ul>
       <li><a href="index.html">首页</a></li>
-      <li><a href="developer\index.html">开发者学院</a></li>
-      <li><a href="text\index.html">心灵鸡汤</a></li>
+      <li><a href="learning\index.html">学习之路</a></li>
+      <li><a href="chickensoup\index.html">心灵鸡汤</a></li>
       <li><a href="submit.html">文章投稿</a></li>
       <li><a href="about.html">关于我们</a></li>
     </ul>
-  </nav>
-  <div class="title">
-    <h1>相关文章提交</h1>
+    <span class="iconfont icon-aixin"></span>
+  <h2 class="special">本网站是博主自己进行自我总结的网站，希望来访者如果有非常值得学习或者感悟的文章，可以联系博主进行投稿</h2>
+  <div class="title2">
+    <h2>相关文章提交</h2>
   </div>
 <div class="form">
   <form action="upload.php" method="POST" enctype="multipart/form-data">
@@ -107,7 +106,7 @@
     
   </form>
 </div>
-
+</nav>
   <script>
     // 可以添加一些JavaScript逻辑来验证表单数据
   </script>

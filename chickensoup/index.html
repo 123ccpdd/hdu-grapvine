@@ -2,42 +2,109 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>我的网站</title>
+  <title>开发者学院 - 列表页</title>
   <link rel="stylesheet" href="..\css\main.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="..\css\learning.css">
+  <link rel="stylesheet" href="../js/learning.js">
   <style>
+
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1 class="main-title">MY GRAPEVINE</h1>
-  </div>
-<nav>
-  <ul>
-    <li><a href="..\index.html">首页</a></li>
-    <li><a href="..\learning\index.html">学习之路</a></li>
-    <li><a href="..\chickensoup\index.html">心灵鸡汤</a></li>
-    <li><a href="..\submit.html">文章投稿</a></li>
-    <li><a href="..\about.html">关于我们</a></li>
-  </ul>
-  <div class="list-item">
-    <a href="detail.html"><h3>信息标题 1</h3></a>
-    <p>创建日期：2023-11-07</p>
-  </div>
-  
-  <div class="list-item">
-    <a href="detail.html"><h3>信息标题 2</h3></a>
-    <p>创建日期：2023-11-06</p>
-  </div>
-  
-  <div class="list-item">
-    <a href="detail.html"><h3>信息标题 3</h3></a>
-    <p>创建日期：2023-11-05</p>
-  </div>
-  
-  <div class="list-item">
-    <a href="detail.html"><h3>信息标题 4</h3></a>
-    <p>创建日期：2023-11-04</p>
-  </div>
+  <h1 class="main-title">MY GRAPEVINE</h1>
+  <nav>
+    <ul>
+      <li><a href="..\index.html">首页</a></li>
+      <li><a href="..\learning\index.html">学习之路</a></li>
+      <li><a href="..\chickensoup\index.html">心灵鸡汤</a></li>
+      <li><a href="..\submit.html">文章投稿</a></li>
+      <li><a href="..\about.html">关于我们</a></li>
+    </ul>
+  </nav>
+  <!-- box区域 -->
+  <div class="box w">
+    <div class="box-hd">
+        <h3>文章收集</h3>
+        <a href="../index.html">返回首页</a>
+    </div>
+    <div class="box-bd">
+        <ul class="clearfix">
+            <script>
+                let data = [
+                    {
+                        src: '../photo/chickensoup/1.png',
+                        title: '生而为人，请务必善良',
+                        time: '2023.4.12',
+                        href:'1.html'
+                    },
+                    {
+                        src: '../photo/learning/course02.png',
+                        title: 'Android 网络动态图片加载实战',
+                        time: '2023.5.12',
+                        href:'https://www.cnblogs.com/huckleberry/p/12714463.html'
+                    },
+                    {
+                        src: '../photo/learning/course03.png',
+                        title: 'Angular2大前端商城实战项目演练',
+                        time: '2023.6.12',
+                        href:'https://gitee.com/yifengketang/blog_system'
+                    },
+                    {
+                        src: '../photo/learning/course04.png',
+                        title: 'AndroidAPP实战项目演练',
+                        time: '2023.7.12',
+                        href:'https://gitee.com/yifengketang/blog_system'
+                    },
+                    {
+                        src: '../photo/learning/course06.png',
+                        title: 'UGUI源码深度分析案例',
+                        time: '2023.8.12',
+                        href:'https://gitee.com/yifengketang/blog_system'
+                    },
+                    {
+                        src: '../photo/learning/course06.png',
+                        title: 'Kami2首页界面切换效果实战演练',
+                        time: '2023.9.12',
+                        href:'https://gitee.com/yifengketang/blog_system'
+                    },
+                    {
+                        src: '../photo/learning/course07.png',
+                        title: 'UNITY 从入门到精通实战案例',
+                        time: '2023.10.12',
+                        href:'https://gitee.com/yifengketang/blog_system'
+                    },
+                    {
+                        src: '../photo/learning/course08.png',
+                        title: 'Cocos 深度学习你不会错过的实战',
+                        time: '2023.11.12',
+                        href:'https://gitee.com/yifengketang/blog_system'
+                    },
+                    {
+                        src: '../photo/learning/add.png',
+                        title: '敬请期待',
+                        time: '202x.xx.xx',
+                        href:'#'
+                    }
+                ]
+
+                for (let i = 0; i < data.length; i++) {
+                    document.write(`
+                    <li>
+                        <a href="${data[i].href}">
+                            <img src=${data[i].src} title="${data[i].title}">
+                            <h4>
+                               ${data[i].title}
+                            </h4>
+                            <div class="info">
+                              发布时间：<span>${data[i].time}</span>
+                            </div>
+                        </a>
+                    </li>
+                  `)
+                }
+            </script>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

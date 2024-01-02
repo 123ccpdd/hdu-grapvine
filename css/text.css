@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+em {
+    font-style: italic;
+    color: #28a745;
+}
+
+strong {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+p {
+    margin-bottom: 20px;
+    text-indent: 2em;
+}
+
+/* 添加一些动画效果 */
+h2:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* 设置一个渐变的背景色 */
+body {
+    background: linear-gradient(to bottom, #f8f8f8, #dcdcdc);
+}
+
+/* 添加阴影效果 */
+p {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 圆角边框 */
+blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* 鼠标悬停效果 */
+blockquote:hover {
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+
+/* 设置链接样式 */
+/* a {
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px dashed #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+    border-bottom: 1px dashed #0056b3;
+    transition: color 0.3s, border-bottom 0.3s;
+} */
+
+/* 添加渐变边框效果 */
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #007bff, #dc3545, #28a745);
+}
+

@@ -1,9 +1,21 @@
+<<<<<<< HEAD
 /* 重置样式 */
 *{
   margin: 0;
   padding: 0;
 }
 h1{
+=======
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+.main-title{
+>>>>>>> 04e3a6271c7c97ac632fb1cbf3ed2c83870424b3
   font-size: 50px;
   color: #4d4f53;
   letter-spacing: 1px;
@@ -12,6 +24,7 @@ h1{
   background-color: #b0bace;
   margin: 0;
   text-align: center;
+<<<<<<< HEAD
   text-shadow: 3px 3px 1px black;
 }
 h2{
@@ -33,6 +46,20 @@ nav {
   background-image: url(../photo/index.jpg);
   padding: 20px;}
 nav ul {
+=======
+}
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "阿里妈妈刀隶体 Regular";font-weight: 400;src: url("//at.alicdn.com\wf\webfont\eqhaqUFEukRf\yRE8xGpLFgk2.woff2") format("woff2"),
+  url("//at.alicdn.com\wf\webfont\eqhaqUFEukRf\yRE8xGpLFgk2.woff") format("woff");
+  font-display: swap;
+}
+/* 导航栏样式 */
+nav {
+  background-color: #f2f2f2;
+  padding: 20px;}
+  nav ul {
+>>>>>>> 04e3a6271c7c97ac632fb1cbf3ed2c83870424b3
   list-style-type: none;
   margin: 0;
   padding: 0 5%;
@@ -56,11 +83,26 @@ nav ul li a:hover {
   color: #ff6666; /* 鼠标悬浮时更改字体颜色为深红色 */
 }
 /* 页面内容样式 */
+<<<<<<< HEAD
 
 .section-wrapper1 {
   padding: 10px;
 }
 
+=======
+.page-content {
+  padding: 20px;
+}
+.section-wrapper {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.section-wrapper:hover {
+  background-color: #e0e0e0;
+}
+
+>>>>>>> 04e3a6271c7c97ac632fb1cbf3ed2c83870424b3
 section {
   margin: 10px 0;
 }
@@ -73,6 +115,7 @@ h2 {
 p {
   margin: 10px 0;
 }
+<<<<<<< HEAD
 
 /* 下面是鼠标轮播图的css代码 */
 .video-box {
@@ -144,3 +187,5 @@ p {
   display: inline;
   justify-content: center;
 }
+=======
+>>>>>>> 04e3a6271c7c97ac632fb1cbf3ed2c83870424b3

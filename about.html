@@ -12,6 +12,29 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  text-align: center;
+}
+/* 为提交按钮添加样式 */
+input[type="submit"] {
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: #fff; /* 文字颜色 */
+    padding: 10px 20px; /* 按钮内边距 */
+    font-size: 16px; /* 字体大小 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标样式为手型 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+/* 悬停时改变背景颜色 */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* 禁用状态的样式 */
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
   </style>
@@ -31,6 +54,8 @@
 </nav>
   <div class="page-content">
     <h2>如果网站有什么不足之处,希望您在下方给出宝贵的建议</h2>
+    <p><i>网站主要为博主自己进行自我总结的网站，希望来访者如果有非常值得学习或者感悟的文章，可以联系博主进行投稿</p>
+    <p><i>网站制作不易，请轻喷谢谢</i></p>
     <form action="/submit" method="POST">
         <label for="name">姓名：</label>
         <input type="text" id="name" name="name" required><br><br>

@@ -1,6 +1,6 @@
 function redirectToLink1() {
-    window.location.href = "https://www.minecraft.net/";
+    window.location.href = "login.html";
   }
 function redirectToLink2() {
-    window.location.href = "https://yys.163.com/";
+    window.location.href = "login.html";
 }

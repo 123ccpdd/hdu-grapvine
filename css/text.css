@@ -25,6 +25,7 @@ strong {
 p {
     margin-bottom: 20px;
     text-indent: 2em;
+    line-height: 2;
 }
 
 /* 添加一些动画效果 */
